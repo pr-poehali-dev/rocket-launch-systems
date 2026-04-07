@@ -49,13 +49,21 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Информация</h4>
+            <h4 className="font-semibold mb-4">Контакты</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
-              <li><a href="#" className="hover:text-foreground transition-colors">О проекте</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Связаться с нами</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Политика конфиденциальности</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Условия участия</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Правила отмены</a></li>
+              <li className="font-medium text-foreground">Авторы тура</li>
+              <li>Кирченкова Софья Алексеевна</li>
+              <li>Сикора Анастасия Александровна</li>
+              <li className="pt-2">
+                <span className="block text-xs uppercase tracking-wide mb-1">Запись на тур</span>
+                <a
+                  href="mailto:Sikoraaa93@yandex.ru"
+                  className="hover:text-primary transition-colors flex items-center gap-1.5"
+                >
+                  <Icon name="Mail" size={14} />
+                  Sikoraaa93@yandex.ru
+                </a>
+              </li>
             </ul>
           </div>
         </div>
