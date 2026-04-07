@@ -1,25 +1,25 @@
-import { Globe, Shield, Headphones, Award } from "lucide-react"
+import Icon from "@/components/ui/icon"
 
 const features = [
   {
-    icon: Globe,
-    title: "Глобальная сеть",
-    description: "Доступ к 150+ направлениям по всему миру с местными экспертами и аутентичным опытом",
+    icon: "BookOpen",
+    title: "Литературный контекст",
+    description: "Каждая точка маршрута раскрывается через тексты Гоголя — цитаты, отрывки, истории создания произведений",
   },
   {
-    icon: Shield,
-    title: "Безопасное бронирование",
-    description: "Защищенные платежи и полная страховка путешествий для вашего спокойствия",
+    icon: "Users",
+    title: "Учёные-гиды",
+    description: "Экскурсии ведут литературоведы и краеведы, влюблённые в эпоху и глубоко знающие материал",
   },
   {
-    icon: Headphones,
-    title: "Поддержка 24/7",
-    description: "Круглосуточная служба поддержки до, во время и после вашей поездки",
+    icon: "Map",
+    title: "Живой маршрут",
+    description: "Не музейные витрины, а настоящие места — усадьбы, дороги, монастыри, где ощущается дух XIX века",
   },
   {
-    icon: Award,
-    title: "Гарантия лучшей цены",
-    description: "Конкурентные цены с гарантией лучшей цены и гибкими вариантами оплаты",
+    icon: "Star",
+    title: "Для всех возрастов",
+    description: "Школьные группы, взрослые ценители литературы и семьи — программа адаптируется под каждую аудиторию",
   },
 ]
 
@@ -27,22 +27,20 @@ export function WhyChooseUs() {
   return (
     <section id="about" className="py-32 bg-muted/30">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-5xl md:text-6xl font-light tracking-tight mb-6 text-balance">
-            Почему выбирают <span className="font-semibold">Horizon Voyages</span>
+            Почему выбирают <span className="font-semibold">наш маршрут</span>
           </h2>
           <p className="text-lg text-muted-foreground text-balance leading-relaxed">
-            Мы превращаем ваши мечты о путешествиях в реальность с исключительным сервисом и незабываемыми впечатлениями
+            Мы соединяем литературу и путешествие — так, чтобы Гоголь ожил не на странице, а прямо перед вами
           </p>
         </div>
 
-        {/* Features Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
             <div key={index} className="text-center space-y-4">
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 text-primary mb-2">
-                <feature.icon className="h-8 w-8" />
+                <Icon name={feature.icon} fallback="Star" size={32} />
               </div>
               <h3 className="text-xl font-semibold">{feature.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{feature.description}</p>

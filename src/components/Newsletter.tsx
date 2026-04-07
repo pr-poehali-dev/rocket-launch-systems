@@ -2,7 +2,7 @@ import type React from "react"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Send } from "lucide-react"
+import Icon from "@/components/ui/icon"
 
 export function Newsletter() {
   const [email, setEmail] = useState("")
@@ -19,10 +19,10 @@ export function Newsletter() {
         <div className="space-y-8">
           <div className="space-y-4">
             <h2 className="text-4xl md:text-5xl font-light tracking-tight text-balance">
-              Будьте <span className="font-semibold">в курсе</span>
+              Узнавайте о <span className="font-semibold">новых турах</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-balance leading-relaxed">
-              Подпишитесь на рассылку и получайте эксклюзивные предложения, гиды по направлениям и советы от экспертов
+              Подпишитесь на рассылку и получайте анонсы экскурсий, литературные истории о калужской земле и спецпредложения
             </p>
           </div>
 
@@ -41,7 +41,7 @@ export function Newsletter() {
                 size="lg"
                 className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6 shrink-0"
               >
-                <Send className="h-5 w-5" />
+                <Icon name="Send" size={20} />
               </Button>
             </div>
           </form>

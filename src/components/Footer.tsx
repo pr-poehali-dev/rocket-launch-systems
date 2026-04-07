@@ -1,132 +1,67 @@
-import { Facebook, Instagram, Twitter, Youtube } from "lucide-react"
+import Icon from "@/components/ui/icon"
 
 export function Footer() {
   return (
     <footer id="contact" className="bg-background border-t border-border">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-semibold">Horizon Voyages</h3>
+            <h3 className="text-xl font-semibold leading-tight">
+              Гоголевские страницы
+              <span className="block text-xs font-normal text-muted-foreground tracking-widest uppercase mt-1">Калужской земли</span>
+            </h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Создаём незабываемые путешествия по всему миру с 2010 года
+              Литературно-туристический маршрут по местам, связанным с Николаем Васильевичем Гоголем
             </p>
             <div className="flex gap-4">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Facebook className="h-5 w-5" />
+                <Icon name="Facebook" size={20} />
               </a>
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Instagram className="h-5 w-5" />
+                <Icon name="Instagram" size={20} />
               </a>
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Youtube className="h-5 w-5" />
+                <Icon name="Youtube" size={20} />
               </a>
             </div>
           </div>
 
-          {/* Destinations */}
           <div>
-            <h4 className="font-semibold mb-4">Направления</h4>
+            <h4 className="font-semibold mb-4">Маршрут</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Европа
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Азия
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Африка
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Америка
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Океания
-                </a>
-              </li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Полотняный Завод</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Оптина пустынь</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Козельск</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Калуга</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Дорога Гоголя</a></li>
             </ul>
           </div>
 
-          {/* Company */}
           <div>
-            <h4 className="font-semibold mb-4">Компания</h4>
+            <h4 className="font-semibold mb-4">Туры</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  О нас
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Вакансии
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Пресса
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Блог
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Партнёры
-                </a>
-              </li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Один день с Гоголем</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Выходные в XIX веке</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Полный маршрут</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Школьные группы</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Корпоративные туры</a></li>
             </ul>
           </div>
 
-          {/* Support */}
           <div>
-            <h4 className="font-semibold mb-4">Поддержка</h4>
+            <h4 className="font-semibold mb-4">Информация</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Центр помощи
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Связаться с нами
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Политика конфиденциальности
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Условия использования
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Правила отмены
-                </a>
-              </li>
+              <li><a href="#" className="hover:text-foreground transition-colors">О проекте</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Связаться с нами</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Политика конфиденциальности</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Условия участия</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Правила отмены</a></li>
             </ul>
           </div>
         </div>
 
-        {/* Bottom Bar */}
         <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>2025 Horizon Voyages. Все права защищены.</p>
+          <p>2026 «Гоголевские страницы Калужской земли». Все права защищены.</p>
         </div>
       </div>
     </footer>
