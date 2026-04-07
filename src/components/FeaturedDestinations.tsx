@@ -15,7 +15,7 @@ const destinations = [
     number: "02",
     name: "Гостиные ряды",
     region: "Калуга",
-    image: "https://cdn.poehali.dev/projects/12e4dfcd-bce3-424b-84fd-5cea732e8d6b/files/95b7e57c-cb48-4d8e-a8c2-a80e9d4935f0.jpg",
+    image: "https://cdn.poehali.dev/projects/12e4dfcd-bce3-424b-84fd-5cea732e8d6b/files/bef7af3c-58f6-4922-a2be-79ddeaec1e4b.jpg",
     description: "Любимое место прогулок Гоголя — торговые ряды с арочными галереями, купеческий уклад и живой дух провинции",
     tag: "Архитектура",
     icon: "Store",
