@@ -49,8 +49,8 @@ export function Hero() {
             <div className="text-sm text-muted-foreground">Точек маршрута</div>
           </div>
           <div className="space-y-2">
-            <div className="text-4xl md:text-5xl font-light">3</div>
-            <div className="text-sm text-muted-foreground">Формата тура</div>
+            <div className="text-4xl md:text-5xl font-light">★</div>
+            <div className="text-sm text-muted-foreground">Авторский формат тура</div>
           </div>
           <div className="space-y-2">
             <div className="text-4xl md:text-5xl font-light">XIX</div>
